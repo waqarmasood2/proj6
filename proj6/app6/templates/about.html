@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+
+{% block title %}YourBrand - About Us{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="about-hero">
+    <div class="container">
+        <h1 class="gradient-text">Our Story</h1>
+        <p class="hero-subtitle">We're on a mission to create products that enrich people's lives.</p>
+    </div>
+</section>
+
+<!-- Company Story -->
+<section class="company-story">
+    <div class="container">
+        <div class="story-grid">
+            <div class="story-image">
+                <img src="{% static 'images/about-company.jpg' %}" alt="Our company">
+            </div>
+            <div class="story-content">
+                <h2>From humble beginnings</h2>
+                <p>Founded in 2010, YourBrand began with a simple idea: technology should be both beautiful and functional. Our founders, driven by a passion for design and innovation, set out to create products that would redefine industry standards.</p>
+                <p>What started in a small garage has grown into a global company with offices in 20 countries. Despite our growth, we remain committed to our core values of excellence, innovation, and customer satisfaction.</p>
+                <p>Today, we continue to push the boundaries of what's possible, creating products that seamlessly integrate into people's lives and help them achieve more.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="values-section">
+    <div class="container">
+        <h2 class="section-title gradient-text">Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                    </svg>
+                </div>
+                <h3>Innovation</h3>
+                <p>We constantly challenge ourselves to think differently and find new solutions to complex problems.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                    </svg>
+                </div>
+                <h3>Excellence</h3>
+                <p>We hold ourselves to the highest standards in everything we do, from product design to customer service.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                    </svg>
+                </div>
+                <h3>Sustainability</h3>
+                <p>We're committed to reducing our environmental impact and creating products that are built to last.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                    </svg>
+                </div>
+                <h3>Inclusivity</h3>
+                <p>We design for everyone, ensuring our products are accessible and usable by people of all abilities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+    <div class="container">
+        <h2 class="section-title">Meet Our Leadership</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{% static 'images/team-1.jpg' %}" alt="John Smith">
+                </div>
+                <h3>John Smith</h3>
+                <p>CEO & Co-Founder</p>
+                <div class="member-bio">
+                    <p>John brings over 20 years of experience in technology and design. His vision drives our company forward.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{% static 'images/team-2.jpg' %}" alt="Jane Doe">
+                </div>
+                <h3>Jane Doe</h3>
+                <p>CTO & Co-Founder</p>
+                <div class="member-bio">
+                    <p>Jane's technical expertise and innovative thinking have been instrumental in developing our groundbreaking products.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{% static 'images/team-3.jpg' %}" alt="David Chen">
+                </div>
+                <h3>David Chen</h3>
+                <p>Chief Design Officer</p>
+                <div class="member-bio">
+                    <p>David leads our design team, ensuring that every product we create is both beautiful and functional.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{% static 'images/team-4.jpg' %}" alt="Sarah Johnson">
+                </div>
+                <h3>Sarah Johnson</h3>
+                <p>Chief Operating Officer</p>
+                <div class="member-bio">
+                    <p>Sarah oversees our day-to-day operations, making sure we deliver excellence in everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Milestones -->
+<section class="milestones-section">
+    <div class="container">
+        <h2 class="section-title gradient-text">Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2010</h3>
+                    <p>YourBrand is founded in a small garage by John Smith and Jane Doe.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2012</h3>
+                    <p>Launch of our first product, which quickly gains popularity for its innovative design.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2015</h3>
+                    <p>Expansion to international markets with offices opening in Europe and Asia.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2018</h3>
+                    <p>Introduction of our sustainability initiative, committing to carbon neutrality by 2025.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2020</h3>
+                    <p>Celebration of our 10th anniversary with the launch of our most advanced product line.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Today</h3>
+                    <p>Continuing to innovate and create products that enrich people's lives around the world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Join Us Section -->
+<section class="join-us-section">
+    <div class="container">
+        <h2>Join Our Team</h2>
+        <p>We're always looking for talented individuals who share our passion for innovation and excellence.</p>
+        <a href="#" class="btn btn-primary">View Open Positions</a>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/about.js' %}"></script>
+{% endblock %}

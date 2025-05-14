@@ -1,0 +1,317 @@
+{% extends 'base.html' %}
+
+{% block title %}YourBrand - Features{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="features-hero">
+    <div class="container">
+        <h1 class="gradient-text">Powerful Features</h1>
+        <p class="hero-subtitle">Discover what makes our products stand out from the competition.</p>
+    </div>
+</section>
+
+<!-- Feature Categories -->
+<section class="feature-categories">
+    <div class="container">
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="design">Design</button>
+            <button class="category-tab" data-category="performance">Performance</button>
+            <button class="category-tab" data-category="ecosystem">Ecosystem</button>
+            <button class="category-tab" data-category="security">Security</button>
+        </div>
+        
+        <div class="category-content active" id="design-content">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Stunning Visuals</h3>
+                    <p>High-resolution displays with vibrant colors and incredible detail.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Intuitive Interface</h3>
+                    <p>User-friendly design that makes navigation simple and intuitive.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Premium Materials</h3>
+                    <p>Crafted from high-quality materials for durability and a premium feel.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Ergonomic Design</h3>
+                    <p>Designed for comfort during extended use, reducing fatigue.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category-content" id="performance-content">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Powered by our latest processor for incredible speed and responsiveness.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>All-Day Battery</h3>
+                    <p>Extended battery life that keeps you going throughout the day.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Efficient Cooling</h3>
+                    <p>Advanced thermal design keeps your device cool even under heavy use.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Optimized Software</h3>
+                    <p>Software and hardware designed to work together for maximum efficiency.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category-content" id="ecosystem-content">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Seamless Integration</h3>
+                    <p>All our products work together flawlessly for a unified experience.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Cloud Sync</h3>
+                    <p>Your data is automatically synced across all your devices.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Universal Accessories</h3>
+                    <p>Our accessories work across multiple products for maximum versatility.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Shared Services</h3>
+                    <p>One subscription gives you access to all our premium services.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category-content" id="security-content">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Advanced Encryption</h3>
+                    <p>End-to-end encryption keeps your data secure and private.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Biometric Authentication</h3>
+                    <p>Secure access with fingerprint and facial recognition technology.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Privacy Controls</h3>
+                    <p>Granular privacy settings give you complete control over your data.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                        </svg>
+                    </div>
+                    <h3>Secure Updates</h3>
+                    <p>Regular security updates to protect against the latest threats.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Showcase -->
+<section class="feature-showcase">
+    <div class="container">
+        <h2 class="section-title gradient-text">Spotlight Features</h2>
+        
+        <div class="showcase-item">
+            <div class="showcase-content">
+                <h3>Revolutionary Display</h3>
+                <p>Our latest display technology delivers stunning visuals with incredible color accuracy and brightness. Whether you're editing photos, watching videos, or browsing the web, everything looks better on our screens.</p>
+                <ul class="feature-list">
+                    <li>True-to-life colors with wide color gamut</li>
+                    <li>High brightness for outdoor visibility</li>
+                    <li>Adaptive refresh rate for smooth scrolling</li>
+                    <li>Anti-reflective coating reduces glare</li>
+                </ul>
+                <a href="#" class="learn-more">Learn more <span class="arrow">→</span></a>
+            </div>
+            <div class="showcase-image">
+                <img src="{% static 'images/feature-display.jpg' %}" alt="Revolutionary Display">
+            </div>
+        </div>
+        
+        <div class="showcase-item reverse">
+            <div class="showcase-content">
+                <h3>Intelligent Assistant</h3>
+                <p>Our AI-powered assistant learns from your habits to provide personalized recommendations and automate routine tasks. It's like having a personal assistant that's always ready to help.</p>
+                <ul class="feature-list">
+                    <li>Natural language processing for conversational interactions</li>
+                    <li>Contextual awareness for relevant suggestions</li>
+                    <li>Automation of routine tasks</li>
+                    <li>Privacy-focused design that keeps your data secure</li>
+                </ul>
+                <a href="#" class="learn-more">Learn more <span class="arrow">→</span></a>
+            </div>
+            <div class="showcase-image">
+                <img src="{% static 'images/feature-assistant.jpg' %}" alt="Intelligent Assistant">
+            </div>
+        </div>
+        
+        <div class="showcase-item">
+            <div class="showcase-content">
+                <h3>Advanced Camera System</h3>
+                <p>Capture stunning photos and videos in any lighting condition with our advanced camera system. From detailed landscapes to beautiful portraits, our cameras help you capture life's moments with exceptional quality.</p>
+                <ul class="feature-list">
+                    <li>High-resolution sensors for detailed images</li>
+                    <li>Night mode for low-light photography</li>
+                    <li>Computational photography for professional-quality results</li>
+                    <li>4K video recording with stabilization</li>
+                </ul>
+                <a href="#" class="learn-more">Learn more <span class="arrow">→</span></a>
+            </div>
+            <div class="showcase-image">
+                <img src="{% static 'images/feature-camera.jpg' %}" alt="Advanced Camera System">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Comparison Table -->
+<section class="comparison-section">
+    <div class="container">
+        <h2 class="section-title">Compare Models</h2>
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Base Model</th>
+                        <th>Pro Model</th>
+                        <th>Pro Max Model</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Display</td>
+                        <td>6.1" HD</td>
+                        <td>6.5" Super HD</td>
+                        <td>6.8" Ultra HD</td>
+                    </tr>
+                    <tr>
+                        <td>Processor</td>
+                        <td>A-Series</td>
+                        <td>A-Series Pro</td>
+                        <td>A-Series Pro Max</td>
+                    </tr>
+                    <tr>
+                        <td>Camera</td>
+                        <td>Dual 12MP</td>
+                        <td>Triple 12MP</td>
+                        <td>Quad 12MP + LiDAR</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Life</td>
+                        <td>Up to 12 hours</td>
+                        <td>Up to 18 hours</td>
+                        <td>Up to 24 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>128GB / 256GB</td>
+                        <td>256GB / 512GB</td>
+                        <td>512GB / 1TB</td>
+                    </tr>
+                    <tr>
+                        <td>Colors</td>
+                        <td>4 options</td>
+                        <td>6 options</td>
+                        <td>8 options</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to experience these features?</h2>
+        <p>Choose the perfect plan for your needs and start enjoying our amazing features today.</p>
+        <a href="{% url 'pricing' %}" class="btn btn-primary">View Pricing Plans</a>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/features.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,325 @@
+{% extends 'base.html' %}
+
+{% block title %}YourBrand - Pricing{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="pricing-hero">
+    <div class="container">
+        <h1 class="gradient-text">Simple, Transparent Pricing</h1>
+        <p class="hero-subtitle">Choose the plan that's right for you.</p>
+    </div>
+</section>
+
+<!-- Pricing Toggle -->
+<section class="pricing-toggle">
+    <div class="container">
+        <div class="toggle-container">
+            <span class="toggle-label">Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="billing-toggle">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Annual <span class="save-badge">Save 20%</span></span>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Plans -->
+<section class="pricing-plans">
+    <div class="container">
+        <div class="plans-grid">
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h3>Basic</h3>
+                    <div class="plan-price">
+                        <span class="price monthly">$19</span>
+                        <span class="price annual">$15</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="plan-description">Perfect for individuals and small projects.</p>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>Core features</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>1 project</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>5GB storage</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>Email support</span>
+                        </li>
+                        <li class="disabled">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="x-icon">
+                                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                            </svg>
+                            <span>Advanced features</span>
+                        </li>
+                        <li class="disabled">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="x-icon">
+                                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                            </svg>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <a href="#" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            
+            <div class="plan-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <div class="plan-header">
+                    <h3>Professional</h3>
+                    <div class="plan-price">
+                        <span class="price monthly">$49</span>
+                        <span class="price annual">$39</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="plan-description">Ideal for professionals and growing businesses.</p>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>All Basic features</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>5 projects</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>50GB storage</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>Advanced features</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="disabled">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="x-icon">
+                                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                            </svg>
+                            <span>Dedicated account manager</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+            
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h3>Enterprise</h3>
+                    <div class="plan-price">
+                        <span class="price monthly">$99</span>
+                        <span class="price annual">$79</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="plan-description">For large organizations with advanced needs.</p>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>All Professional features</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>Unlimited projects</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>500GB storage</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>Advanced security</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>24/7 support</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="check-icon">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                            <span>Dedicated account manager</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan-cta">
+                    <a href="#" class="btn btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title gradient-text">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3 class="faq-question">Can I switch plans later?</h3>
+                <div class="faq-answer">
+                    <p>Yes, you can upgrade or downgrade your plan at any time. If you upgrade, you'll be charged the prorated difference. If you downgrade, you'll receive a prorated credit.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Do you offer refunds?</h3>
+                <div class="faq-answer">
+                    <p>We offer a 14-day money-back guarantee for all plans. If you're not satisfied with our service, you can request a full refund within 14 days of your purchase.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What payment methods do you accept?</h3>
+                <div class="faq-answer">
+                    <p>We accept all major credit cards, PayPal, and bank transfers for annual plans. We do not accept cryptocurrency at this time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Do you offer custom plans?</h3>
+                <div class="faq-answer">
+                    <p>Yes, we offer custom plans for large organizations with specific needs. Please contact our sales team to discuss your requirements.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can I cancel my subscription anytime?</h3>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your subscription at any time. Your service will continue until the end of your current billing period.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Is there a free trial available?</h3>
+                <div class="faq-answer">
+                    <p>We offer a 7-day free trial for our Professional plan. No credit card is required to start your trial.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enterprise Section -->
+<section class="enterprise-section">
+    <div class="container">
+        <div class="enterprise-card">
+            <div class="enterprise-content">
+                <h2>Need a custom solution?</h2>
+                <p>Our enterprise solutions are tailored to meet the unique needs of your organization. Get in touch with our sales team to discuss how we can help you achieve your goals.</p>
+                <ul class="enterprise-features">
+                    <li>Custom implementation</li>
+                    <li>Dedicated support team</li>
+                    <li>Advanced security features</li>
+                    <li>Custom integrations</li>
+                    <li>Training and onboarding</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Contact Enterprise Sales</a>
+            </div>
+            <div class="enterprise-image">
+                <img src="{% static 'images/enterprise.jpg' %}" alt="Enterprise Solutions">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">What our customers say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide active">
+                <p class="quote">"The pricing is transparent and the value we get is incredible. The Professional plan has everything we need to run our business efficiently."</p>
+                <div class="author">
+                    <img src="{% static 'images/testimonial-4.jpg' %}" alt="David Wilson">
+                    <div>
+                        <h4>David Wilson</h4>
+                        <p>Small Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <p class="quote">"We started with the Basic plan and upgraded as our needs grew. The transition was seamless and the support team was incredibly helpful."</p>
+                <div class="author">
+                    <img src="{% static 'images/testimonial-5.jpg' %}" alt="Lisa Chen">
+                    <div>
+                        <h4>Lisa Chen</h4>
+                        <p>Marketing Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <p class="quote">"The Enterprise plan gives us the flexibility and security we need for our large organization. The dedicated account manager is a game-changer."</p>
+                <div class="author">
+                    <img src="{% static 'images/testimonial-6.jpg' %}" alt="Robert Johnson">
+                    <div>
+                        <h4>Robert Johnson</h4>
+                        <p>CTO, Enterprise Corp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-controls">
+            <button class="testimonial-dot active" data-slide="0"></button>
+            <button class="testimonial-dot" data-slide="1"></button>
+            <button class="testimonial-dot" data-slide="2"></button>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to get started?</h2>
+        <p>Join thousands of satisfied customers who have made the switch.</p>
+        <a href="#" class="btn btn-primary">Choose Your Plan</a>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/pricing.js' %}"></script>
+{% endblock %}

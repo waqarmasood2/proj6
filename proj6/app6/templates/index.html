@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block title %}YourBrand - Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container-1 ">
+        <h1 class="gradient-text center-heading">The future is here.</h1>
+        <p class="hero-subtitle gradient-text">Experience innovation like never before with our revolutionary products.</p>
+        <div class="hero-cta">
+            <a href="{% url 'features' %}" class="btn btn-primary">Explore Features</a>
+            <a href="{% url 'pricing' %}" class="btn btn-secondary">View Pricing</a>
+        </div>
+    </div>
+</section>
+
+<!-- Product Showcase -->
+<section class="product-showcase">
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="#" alt="Product 1" class="parallax-image">
+            </div>
+            <div class="product-info">
+                <h2>Incredible Design</h2>
+                <p>Crafted with precision and attention to detail, our products are designed to impress.</p>
+                <a href="#" class="learn-more">Learn more <span class="arrow">→</span></a>
+            </div>
+        </div>
+        
+        <div class="product-card reverse">
+            <div class="product-image">
+                <img src="#" alt="Product 2" class="parallax-image">
+            </div>
+            <div class="product-info">
+                <h2>Powerful Performance</h2>
+                <p>Engineered for speed and efficiency, our technology sets new standards in performance.</p>
+                <a href="#" class="learn-more">Learn more <span class="arrow">→</span></a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="#" alt="Product 3" class="parallax-image">
+            </div>
+            <div class="product-info">
+                <h2>Seamless Integration</h2>
+                <p>All our products work together flawlessly, creating an ecosystem that enhances your experience.</p>
+                <a href="#" class="learn-more">Learn more <span class="arrow">→</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Grid -->
+<section class="features-grid">
+    <div class="container">
+        <h2 class="section-title gradient-text">Why choose us</h2>
+        <div class="grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                    </svg>
+                </div>
+                <h3>Innovation</h3>
+                <p>Pushing the boundaries of what's possible with cutting-edge technology.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                    </svg>
+                </div>
+                <h3>Quality</h3>
+                <p>Uncompromising standards in materials, design, and manufacturing.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                    </svg>
+                </div>
+                <h3>Sustainability</h3>
+                <p>Committed to reducing our environmental impact with eco-friendly practices.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                    </svg>
+                </div>
+                <h3>Support</h3>
+                <p>Dedicated customer service to ensure your complete satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">What our customers say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide active">
+                <p class="quote">"This product has completely transformed how I work. The design is stunning and the performance is unmatched."</p>
+                <div class="author">
+                    <img src="#" alt="Sarah Johnson">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <p>Creative Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <p class="quote">"The attention to detail is incredible. Every aspect of this product shows thoughtful design and engineering."</p>
+                <div class="author">
+                    <img src="#" alt="Michael Chen">
+                    <div>
+                        <h4>Michael Chen</h4>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <p class="quote">"I've tried many similar products, but nothing comes close to the quality and user experience of this one."</p>
+                <div class="author">
+                    <img src="#" alt="Emily Rodriguez">
+                    <div>
+                        <h4>Emily Rodriguez</h4>
+                        <p>Product Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-controls">
+            <button class="testimonial-dot active" data-slide="0"></button>
+            <button class="testimonial-dot" data-slide="1"></button>
+            <button class="testimonial-dot" data-slide="2"></button>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to experience the difference?</h2>
+        <p>Join thousands of satisfied customers who have made the switch.</p>
+        <a href="#" class="btn btn-primary">Get Started Today</a>
+    </div>
+</section>
+{% endblock %}
