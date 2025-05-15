@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
      document.body.style.cursor = 'none';
 
 
+
     // Theme Toggle
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
@@ -44,12 +45,80 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+// const mobNav = document.querySelector("")
 
 
 
 
+const square = document.querySelector(".square");
+const triangle = document.querySelector('.rounded-triangle');
 
+// Initialize sizes if elements exist
+if (square) {
+    square.style.height = "100px";
+    square.style.width = "100px";
+}
 
+if (triangle) {
+    triangle.style.height = "100px";
+    triangle.style.width = "100px";
+}
+
+// Square movement variables
+let posX = window.innerWidth / 2;
+let posY = window.innerHeight / 2;
+let angle = 0;
+let speedX = Math.random() * 4 - 2; 
+let speedY = Math.random() * 4 - 2;
+let rotationSpeed = 1;
+
+// Triangle movement variables
+let triPosX = window.innerWidth / 2;
+let triPosY = window.innerHeight / 2;
+let tri_angle = 0;
+let triSpeedX = Math.random() * 4 - 2;
+let triSpeedY = Math.random() * 4 - 2;
+let triRotationSpeed = Math.random() * 3;
+
+function animatesquare() {
+    if (!square) return; // Stop if element doesn't exist
+    
+    // Update square position
+    posX += speedX;
+    posY += speedY;
+    angle += rotationSpeed;
+
+    // Apply movement
+    square.style.transform = `translate(${posX}px, ${posY}px) rotate(${angle}deg)`;
+
+    // Collision detection
+    if (posX + 100 >= window.innerWidth || posX <= 0) speedX *= -1;
+    if (posY + 100 >= window.innerHeight || posY <= 0) speedY *= -1;
+
+    requestAnimationFrame(animatesquare); // Call itself
+}
+
+function triangleanimate() {
+    if (!triangle) return; // Stop if element doesn't exist
+    
+    // Update triangle position
+    triPosX += triSpeedX;
+    triPosY += triSpeedY;
+    tri_angle += triRotationSpeed;
+
+    // Apply movement
+    triangle.style.transform = `translate(${triPosX}px, ${triPosY}px) rotate(${tri_angle}deg)`;
+
+    // Collision detection
+    if (triPosX + 100 >= window.innerWidth || triPosX <= 0) triSpeedX *= -1;
+    if (triPosY + 100 >= window.innerHeight || triPosY <= 0) triSpeedY *= -1;
+
+    requestAnimationFrame(triangleanimate); // Call itself
+}
+
+// Start both animations independently
+if (square) animatesquare();
+if (triangle) triangleanimate();
 
 
 
