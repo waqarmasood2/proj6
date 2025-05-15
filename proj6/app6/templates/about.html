@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}YourBrand - About Us{% endblock %}
 
@@ -16,7 +17,7 @@
     <div class="container">
         <div class="story-grid">
             <div class="story-image">
-                <img src="{% static 'images/about-company.jpg' %}" alt="Our company">
+                <img src="#" alt="Our company">
             </div>
             <div class="story-content">
                 <h2>From humble beginnings</h2>
@@ -80,7 +81,7 @@
         <div class="team-grid">
             <div class="team-member">
                 <div class="member-image">
-                    <img src="{% static 'images/team-1.jpg' %}" alt="John Smith">
+                    <img src="#" alt="John Smith">
                 </div>
                 <h3>John Smith</h3>
                 <p>CEO & Co-Founder</p>
@@ -90,7 +91,7 @@
             </div>
             <div class="team-member">
                 <div class="member-image">
-                    <img src="{% static 'images/team-2.jpg' %}" alt="Jane Doe">
+                    <img src="#" alt="Jane Doe">
                 </div>
                 <h3>Jane Doe</h3>
                 <p>CTO & Co-Founder</p>
@@ -100,7 +101,7 @@
             </div>
             <div class="team-member">
                 <div class="member-image">
-                    <img src="{% static 'images/team-3.jpg' %}" alt="David Chen">
+                    <img src="#" alt="David Chen">
                 </div>
                 <h3>David Chen</h3>
                 <p>Chief Design Officer</p>
@@ -110,7 +111,7 @@
             </div>
             <div class="team-member">
                 <div class="member-image">
-                    <img src="{% static 'images/team-4.jpg' %}" alt="Sarah Johnson">
+                    <img src="#" alt="Sarah Johnson">
                 </div>
                 <h3>Sarah Johnson</h3>
                 <p>Chief Operating Officer</p>
@@ -181,8 +182,7 @@
         <a href="#" class="btn btn-primary">View Open Positions</a>
     </div>
 </section>
-{% endblock %}
-
-{% block extra_js %}
 <script src="{% static 'js/about.js' %}"></script>
 {% endblock %}
+
+
