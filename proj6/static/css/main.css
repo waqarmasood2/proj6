@@ -185,7 +185,8 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
 }
-
+/* testingggggg */
+/* testingggg */
 /* Navigation */
 .main-nav {
     position: fixed;
@@ -196,7 +197,7 @@ a {
 }
 @media (max-width: 768px) {
     :root {
-        --main-nav-height: 50px; /* Smaller navbar on mobile */
+        --main-nav-height: 6rem; /* Smaller navbar on mobile */
     }
 }
 
@@ -306,7 +307,7 @@ a {
     background-color: #2c2c2e;
 }
 
-.light-theme .moon-icon {
+/* .light-theme .moon-icon {
     display: block;
 }
 
@@ -320,7 +321,7 @@ a {
 
 .dark-theme .sun-icon {
     display: block;
-}
+} */
 
 .light-theme .moon-icon path {
     fill: var(--text-primary-light);

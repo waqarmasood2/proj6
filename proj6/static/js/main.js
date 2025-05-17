@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-// const mobNav = document.querySelector("")
+const mobMenuToggle = document.querySelector(".mobile-menu-toggle");
+const mobMenu =document.querySelector(".mobile-menu");
 
 
 
